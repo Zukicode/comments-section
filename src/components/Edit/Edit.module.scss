@@ -1,0 +1,27 @@
+.edit {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 20px;
+
+	textarea {
+		width: 100%;
+		height: 110px;
+		resize: none;
+		padding: 15px 15px 15px 20px;
+		font-size: 16px;
+		border: 1px solid var(--gray);
+		border-radius: 8px;
+		color: var(--dark-blue);
+
+		@media (max-width: 768px) {
+			width: 100%;
+			order: 1;
+		}
+
+		&:focus {
+			border: 1px solid var(--primary-blue);
+		}
+	}
+}

@@ -1,0 +1,26 @@
+@use './_normalize';
+@use './_font';
+@use './_colors';
+
+body {
+	padding: 100px 0px;
+	height: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--light-gray);
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--primary-blue);
+	border-radius: 10px;
+}

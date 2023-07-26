@@ -1,0 +1,53 @@
+.addReply {
+	width: 100%;
+	display: flex;
+	gap: 15px;
+	background: var(--white);
+	border-radius: 5px;
+	padding: 25px 20px;
+	position: relative;
+
+	@media (max-width: 768px) {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	img {
+		width: 50px;
+		height: 50px;
+
+		@media (max-width: 768px) {
+			order: 2;
+		}
+	}
+
+	textarea {
+		width: 80%;
+		height: 110px;
+		resize: none;
+		padding: 15px 15px 15px 20px;
+		font-size: 16px;
+		border: 1px solid var(--gray);
+		border-radius: 8px;
+		color: var(--dark-blue);
+
+		@media (max-width: 768px) {
+			width: 100%;
+			order: 1;
+		}
+
+		&:focus {
+			border: 1px solid var(--primary-blue);
+		}
+	}
+
+	button {
+		@media (max-width: 768px) {
+			order: 3;
+			position: absolute;
+			right: 20px;
+			bottom: 25px;
+		}
+	}
+}

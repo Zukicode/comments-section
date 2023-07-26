@@ -1,0 +1,13 @@
+.comment {
+	width: 100%;
+	padding: 25px 20px;
+	background: var(--white);
+	border-radius: 5px;
+	display: flex;
+	gap: 20px;
+	position: relative;
+
+	@media (max-width: 768px) {
+		flex-direction: column-reverse;
+	}
+}

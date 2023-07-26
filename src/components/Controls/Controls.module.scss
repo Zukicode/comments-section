@@ -1,0 +1,43 @@
+.controls {
+	display: flex;
+	gap: 25px;
+
+	@media (max-width: 768px) {
+		position: absolute;
+		right: 20px;
+		bottom: 35px;
+	}
+
+	@media (max-width: 360px) {
+		bottom: 25px;
+		flex-direction: column;
+	}
+
+	button {
+		background: none;
+		border: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 6px;
+		font-size: 16px;
+		font-weight: 500;
+		color: var(--primary-blue);
+		cursor: pointer;
+		transition: all 0.4s;
+
+		&.delete {
+			color: var(--primary-red);
+		}
+
+		&:hover {
+			transition: all 0.4s;
+			opacity: 0.4;
+		}
+
+		span {
+			position: relative;
+			top: 2px;
+		}
+	}
+}

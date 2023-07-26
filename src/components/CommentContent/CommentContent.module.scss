@@ -1,0 +1,70 @@
+.content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+
+	.header {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		.textHeader {
+			display: flex;
+			align-items: center;
+			gap: 15px;
+
+			@media (max-width: 330px) {
+				gap: 10px;
+			}
+
+			img {
+				width: 35px;
+				height: 35px;
+			}
+
+			.name {
+				color: var(--dark-blue);
+				font-weight: 700;
+				font-size: 16px;
+
+				@media (max-width: 330px) {
+					font-size: 14px;
+				}
+			}
+
+			.dateSend {
+				color: var(--dark-gray);
+				margin-left: 5px;
+				font-size: 16px;
+				font-weight: 400;
+
+				@media (max-width: 330px) {
+					font-size: 12px;
+				}
+			}
+
+			.you {
+				background: var(--primary-blue);
+				color: var(--white);
+				padding: 2px 5px;
+				font-size: 14px;
+				font-weight: 400;
+				border-radius: 4px;
+			}
+		}
+	}
+
+	.text {
+		color: var(--dark-gray);
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 400;
+
+		.username {
+			font-size: 16px;
+			color: var(--primary-blue);
+			font-weight: 600;
+		}
+	}
+}
